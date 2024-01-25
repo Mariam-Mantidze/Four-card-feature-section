@@ -111,3 +111,40 @@ header p {
 .blue {
   border-top: 3.552px solid #549ef2;
 }
+
+@media screen and (min-width: 1440px) {
+  #light,
+  #bold {
+    font-size: 36px;
+  }
+  header p {
+    width: 540px;
+  }
+
+  #card-section {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .aqua {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .blue {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+  .card {
+    width: 350px;
+    padding: 28px 32px 136px;
+    border-top-width: 4px;
+  }
+  .paragraph {
+    width: 286px;
+  }
+}
